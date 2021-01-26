@@ -7,9 +7,10 @@ $(function() {
       var newDevouredState = {
         devoured: newdevoured
       };
+      console.log(newDevouredState);
   
       // Send the PUT request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/api/burger/" + id, {
         type: "PUT",
         data: newDevouredState
       }).then(
